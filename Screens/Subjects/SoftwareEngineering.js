@@ -11,14 +11,14 @@ import {
 import React from "react";
 import tw from "tailwind-react-native-classnames";
 import { Divider } from "@rneui/themed";
-const CSCL = () => {
+const SoftwareEngineering = () => {
   return (
     <SafeAreaView style={[styles.container, tw`pl-6 mt-0`]}>
       <StatusBar />
       <ScrollView>
         <Image
           style={[styles.img]}
-          source={require("../../assets/img/sixth/cscl/cscl-2022.png")}
+          source={require("../../assets/img/sixth/softeng/softeng-2022.png")}
         />
         <Divider
           style={[tw`bg-red-600`, styles.divider]}
@@ -27,16 +27,7 @@ const CSCL = () => {
         />
         <Image
           style={[styles.img]}
-          source={require("../../assets/img/sixth/cscl/cscl-2021.png")}
-        />
-        <Divider
-          style={[tw`bg-red-600`, styles.divider]}
-          inset={true}
-          insetType="middle"
-        />
-        <Image
-          style={[styles.imgMake]}
-          source={require("../../assets/img/sixth/cscl/cscl-2021-makeup.png")}
+          source={require("../../assets/img/sixth/softeng/softeng-2021.png")}
         />
         <Divider
           style={[tw`bg-red-600`, styles.divider]}
@@ -45,7 +36,7 @@ const CSCL = () => {
         />
         <Image
           style={[styles.img]}
-          source={require("../../assets/img/sixth/cscl/cscl-2019.png")}
+          source={require("../../assets/img/sixth/softeng/softeng-2019.png")}
         />
         <Divider
           style={[tw`bg-red-600`, styles.divider]}
@@ -54,7 +45,7 @@ const CSCL = () => {
         />
         <Image
           style={[styles.img]}
-          source={require("../../assets/img/sixth/cscl/cscl-2019-makeup.png")}
+          source={require("../../assets/img/sixth/softeng/softeng-2019-makeup.png")}
         />
         <Divider
           style={[tw`bg-red-600`, styles.divider]}
@@ -63,7 +54,7 @@ const CSCL = () => {
         />
         <Image
           style={[styles.img]}
-          source={require("../../assets/img/sixth/cscl/cscl-2018.png")}
+          source={require("../../assets/img/sixth/softeng/softeng-2018.png")}
         />
         <Divider
           style={[tw`bg-red-600`, styles.divider]}
@@ -75,7 +66,7 @@ const CSCL = () => {
   );
 };
 
-export default CSCL;
+export default SoftwareEngineering;
 
 const styles = StyleSheet.create({
   container: {
@@ -85,8 +76,8 @@ const styles = StyleSheet.create({
   },
   img: {
     resizeMode: "contain",
-    height: 550,
-    width: Dimensions.get("window").width,
+    height: 600,
+    width: Dimensions.get("window").width - 10,
   },
   imgMake: {
     resizeMode: "contain",

@@ -11,14 +11,18 @@ import {
 import React from "react";
 import tw from "tailwind-react-native-classnames";
 import { Divider } from "@rneui/themed";
-const CSCL = () => {
+const BusinessEnvironment = () => {
   return (
-    <SafeAreaView style={[styles.container, tw`pl-6 mt-0`]}>
+    <SafeAreaView style={[styles.container, tw`pl-3 pt-3`]}>
       <StatusBar />
       <ScrollView>
         <Image
           style={[styles.img]}
-          source={require("../../assets/img/sixth/cscl/cscl-2022.png")}
+          source={require("../../assets/img/sixth/businessenv/businessenv-2022-1.png")}
+        />
+        <Image
+          style={[styles.img]}
+          source={require("../../assets/img/sixth/businessenv/businessenv-2022-2.png")}
         />
         <Divider
           style={[tw`bg-red-600`, styles.divider]}
@@ -27,16 +31,11 @@ const CSCL = () => {
         />
         <Image
           style={[styles.img]}
-          source={require("../../assets/img/sixth/cscl/cscl-2021.png")}
-        />
-        <Divider
-          style={[tw`bg-red-600`, styles.divider]}
-          inset={true}
-          insetType="middle"
+          source={require("../../assets/img/sixth/businessenv/businessenv-2021-1.png")}
         />
         <Image
-          style={[styles.imgMake]}
-          source={require("../../assets/img/sixth/cscl/cscl-2021-makeup.png")}
+          style={[styles.img]}
+          source={require("../../assets/img/sixth/businessenv/businessenv-2021-2.png")}
         />
         <Divider
           style={[tw`bg-red-600`, styles.divider]}
@@ -45,25 +44,11 @@ const CSCL = () => {
         />
         <Image
           style={[styles.img]}
-          source={require("../../assets/img/sixth/cscl/cscl-2019.png")}
-        />
-        <Divider
-          style={[tw`bg-red-600`, styles.divider]}
-          inset={true}
-          insetType="middle"
+          source={require("../../assets/img/sixth/businessenv/businessenv-2019-1.png")}
         />
         <Image
           style={[styles.img]}
-          source={require("../../assets/img/sixth/cscl/cscl-2019-makeup.png")}
-        />
-        <Divider
-          style={[tw`bg-red-600`, styles.divider]}
-          inset={true}
-          insetType="middle"
-        />
-        <Image
-          style={[styles.img]}
-          source={require("../../assets/img/sixth/cscl/cscl-2018.png")}
+          source={require("../../assets/img/sixth/businessenv/businessenv-2019-2.png")}
         />
         <Divider
           style={[tw`bg-red-600`, styles.divider]}
@@ -75,7 +60,7 @@ const CSCL = () => {
   );
 };
 
-export default CSCL;
+export default BusinessEnvironment;
 
 const styles = StyleSheet.create({
   container: {
@@ -85,13 +70,8 @@ const styles = StyleSheet.create({
   },
   img: {
     resizeMode: "contain",
-    height: 550,
-    width: Dimensions.get("window").width,
-  },
-  imgMake: {
-    resizeMode: "contain",
-    height: 370,
-    width: Dimensions.get("window").width,
+    height: 600,
+    width: Dimensions.get("window").width - 5,
   },
   divider: {
     height: 2,

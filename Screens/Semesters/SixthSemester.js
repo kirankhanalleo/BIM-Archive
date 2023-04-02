@@ -24,7 +24,7 @@ const SixthSemester = () => {
         </TouchableOpacity>
         <TouchableOpacity
           style={[tw`p-3 mt-4 w-60 mb-6 bg-red-400 rounded-full`]}
-          onPress={() => navigation.navigate("SixthSemester")}
+          onPress={() => navigation.navigate("SoftwareEngineering")}
         >
           <Text style={tw`text-white text-center font-light text-lg`}>
             Software Engineering
@@ -32,7 +32,7 @@ const SixthSemester = () => {
         </TouchableOpacity>
         <TouchableOpacity
           style={[tw`p-3 mt-4 w-60 mb-6 bg-red-400 rounded-full`]}
-          onPress={() => navigation.navigate("SixthSemester")}
+          onPress={() => navigation.navigate("BusinessEnvironment")}
         >
           <Text style={tw`text-white text-center font-light text-lg`}>
             Business Environment
@@ -40,7 +40,7 @@ const SixthSemester = () => {
         </TouchableOpacity>
         <TouchableOpacity
           style={[tw`p-3 mt-4 w-60 mb-6 bg-red-400 rounded-full`]}
-          onPress={() => navigation.navigate("SixthSemester")}
+          onPress={() => navigation.navigate("BusinessFinance")}
         >
           <Text style={tw`text-white text-center font-light text-lg`}>
             Business Finance
@@ -48,7 +48,7 @@ const SixthSemester = () => {
         </TouchableOpacity>
         <TouchableOpacity
           style={[tw`p-3 mt-4 w-60 mb-6 bg-red-400 rounded-full`]}
-          onPress={() => navigation.navigate("SixthSemester")}
+          onPress={() => navigation.navigate("HRM")}
         >
           <Text style={tw`text-white text-center font-light text-lg`}>HRM</Text>
         </TouchableOpacity>
