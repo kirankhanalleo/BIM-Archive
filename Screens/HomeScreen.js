@@ -6,18 +6,38 @@ import {
   StatusBar,
   Dimensions,
   TouchableOpacity,
+  ImageBackground,
 } from "react-native";
 import React from "react";
 import tw from "tailwind-react-native-classnames";
 import { useNavigation } from "@react-navigation/native";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
+
 const HomeScreen = () => {
   const navigation = useNavigation();
   return (
     <View style={styles.homescreen}>
-      <Image
+      <ImageBackground
         style={[tw` rounded-br-3xl rounded-bl-3xl`, styles.banner]}
         source={require("../assets/welcome-banner.png")}
-      />
+      >
+        <FontAwesome5
+          onPress={() => navigation.toggleDrawer()}
+          name="bars"
+          size={30}
+          style={{
+            color: "#fff",
+            padding: 8,
+            paddingLeft: 10,
+            marginTop: 60,
+            marginLeft: 41,
+            width: 47,
+            height: 47,
+            backgroundColor: "#FF725E",
+            borderRadius: 50,
+          }}
+        />
+      </ImageBackground>
       <Text
         style={[
           tw`pt-10 uppercase text-2xl text-center tracking-wide font-bold`,
@@ -61,9 +81,10 @@ export default HomeScreen;
 const styles = StyleSheet.create({
   container: {
     marginTop: StatusBar.currentHeight,
+    minHeight: Dimensions.get("window").height,
   },
   banner: {
-    height: 490,
+    height: Dimensions.get("window").height * 0.6,
     width: Dimensions.get("window").width,
     resizeMode: "contain",
     backgroundColor: "#555ae6",
